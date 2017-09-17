@@ -4,7 +4,6 @@ Go Programming Basics
 * number := uint8(24)
 * fmt.Printf("%s\n", atoz[0:9])
 
-
 Ultimage Go Programming
 =======================
 - Big Proyects, and thousand of line don't said anything.
@@ -13,9 +12,11 @@ Ultimage Go Programming
 - Nothing is FREE, every decision have a cost, extra its not bad, but take in
   mind when they're needed.
 - Stop copy & paste code, think on what're u doing.
+
 Productivity vs Performance ?
 ------------------------------
 - The important its to be productive, its fast enough?
+
 Correctness vs Performance
 --------------------------
 - The Correctness of the implementation is the most important concern, but
@@ -23,7 +24,8 @@ Correctness vs Performance
   thinking of invariants, testing and code reviews. Optimization should be
   done, but not prematurely.
 - simple code, consistency is part of the Correctness
-Code Reviews 
+
+Code Reviews
 -------------
 - Integrity
         - take responsabilities, the life depends of technologies.
@@ -44,7 +46,6 @@ Code Reviews
   Simplicity, Readbility but never from Integrity.
 - This  should be base on Measure no guesses.
 - STOP wasting effort.
-
 
 Language Syntax
 ----------------
@@ -199,6 +200,6 @@ Constants
 		C1 = iota // 2 : Increment by 1
                 )
 - The example 3 its nice to figure out how iota works. =)
+
 Functions
 ----------
-- 
