@@ -176,6 +176,7 @@ Language Syntax
 - Every Root found will put on a queue and check its still on use or not and
   will be marked black (in use) ir whithe( not anymore )
 - The Phase II its not happening anymore.
+
 Constants
 ----------
 - Constants live within the compiler, and only exist at compile time.
