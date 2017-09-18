@@ -59,7 +59,7 @@ Language Syntax
 - word size == addresses size.
 - architecture 64 == addresses 64 == word 64 == int 64.
 - Playground runs on AMD64p32 == 64 architecture except for pointer?
-- All the jobs are base on 4 bytes of memory allocation.
+- All the word are base on 4 bytes of memory allocation.
 - Too many ways to declare variables.
 - string == 2 words == empty
 - var b float64 == will always be 8 bytes the arch not matter in this case.
@@ -203,3 +203,56 @@ Constants
 
 Functions
 ----------
+- Funtions return more that 1 value.
+- Go Does not have constructors.
+- Factory funtions start with the word new.
+- The scope for var are delimiter by {} of code.
+- I must visit this topic again in the future.
+- The := must declare at least 1 var and rehuse others.
+- Use short variables for go because the scope.
+- The _ identifier allow to not use a value if no needed.
+- i like this way of defining variables to a funtion 
+        // Update the user Name. Don't care about the update stats.
+                if _, err := updateUser(&u); err != nil {
+                        fmt.Println(err)
+                        return
+                }
+- The first indent its the happy path the second its the negative path.
+- never put inside a happy path inside of another path.
+
+Data structures
+----------------
+- Slices are similar to arrays and they work on go only.
+- Predictive access pattern to data ?
+- Complicate topic again :/ but this are the basement of the lenguage.
+- the slices are similar to vector.
+- THIS COULD BE THE MORE IMPORTANT TOPIC.
+
+Arrays
+-------
+- An array of string is 2 byte for each
+- for the exercise the array of 5 string == 2word for each element, 10 word ==
+                                                          40 bytes total
+- The for range copy by value,  the value of the backend array, the fruit will
+  be a string, and pointer to the same backend array and when the println
+  create another copy of the backend array.
+- The string don't produce garbage we always know the size of the string.
+- the thing that could be on the heap its the backend array, that could
+  increase with too. =)
+- Type is size and representation, an array of size 4 cannot be assign to
+  a array of size 5 because are different types.
+- There's a amazing exercise when you can see the contiguous memory of the
+  arrays.
+
+Slices
+-------
+- the make its a build in funtion that works with slice, maps, channel.
+- Now lets start talk about reference types, slices, maps, interfaces,
+  channel, function values.
+- Reference value to zero is nil != string.
+- The diagrams are importants to undestand the code.
+- the Slice use a diff structure type.
+        3 word size, 1 pointer to backend array, 2 len, 3 cap.
+- the len its what u have access to read/write.
+- the cap its what's you have on the backend array
+
