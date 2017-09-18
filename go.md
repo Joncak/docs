@@ -255,4 +255,25 @@ Slices
         3 word size, 1 pointer to backend array, 2 len, 3 cap.
 - the len its what u have access to read/write.
 - the cap its what's you have on the backend array
-
+- fmt.Println(slice) this is pass by value so println get his own copy.
+- this is interesting
+        slice := make([]string, 5, 8) //defining the len, and extra capacity.
+- Off couse you could declare the max of a slice but do it only when its
+  needed, after testing, remember Correctness.
+- its possible to use a empty struct that return empty instead of null
+- with var you always return zero values.
+- build in function append allow you add values to the slice, making the slice
+  dynamic, without loosing contiguous address.
+-  the append will copy the value a bring another new copy of the slide.
+- its possible the slice of a slice with [a:b] but could be confuse the best
+  way is using [2:3] when 2 its the position of what i want and the other is
+  the total len.
+- When we change a value of a backend array that who its the pointer value to
+  several slides, all the slides will change.
+- The solution would be put a new slice from a slice but with similar len and
+  capacity, this way need to create a new allocation to the array.
+- slice of slices == slicing.
+- The thing is if you put a pointer to a slice then and need to allocate a new
+backend array you lost your pointer, the value its on another address.
+- Chinese character need 3byte of data for each one.
+- copy its a buildin function, works for string and slices.
