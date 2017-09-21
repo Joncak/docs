@@ -276,4 +276,6 @@ Slices
 - The thing is if you put a pointer to a slice then and need to allocate a new
 backend array you lost your pointer, the value its on another address.
 - Chinese character need 3byte of data for each one.
-- copy its a buildin function, works for string and slices.
+- copy its a buildin function, works for string and slices, string could be
+  a source, a slice could be a source & destination.
+- the for range iterate between code point no bytes.
