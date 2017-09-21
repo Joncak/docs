@@ -276,4 +276,34 @@ Slices
 - The thing is if you put a pointer to a slice then and need to allocate a new
 backend array you lost your pointer, the value its on another address.
 - Chinese character need 3byte of data for each one.
-- copy its a buildin function, works for string and slices.
+- copy its a buildin function, works for string and slices and allow you to copy the bytes for every codepoint to an array.
+- Every array its just a slice that could be converted
+- Everything is happening on the stackframe, without alocation also the the array create with the copy function is becoming the backend array.
+- A make call allow you to do the same.
+- The chinesse letter exercise its hard ( example6)
+- Amazing topic, i need to practice this more.
+
+Maps
+-------
+- For maps the make works too.
+	user := make(map[string]user)
+- More info about maps --> https://www.youtube.com/watch?v=Tl7mi9QmLns
+- Do not share the maps, similar to arrays, slices.
+- The range for maps are random. 
+- Don't store to much key on a map, eventually you will be out of mem.
+- maps literal is when creating a map and initialize a value right away.
+- the make its required only to declare to zero.
+- buildin function delete to use with maps.
+- If the key its not found you still receive a value but to his zero value.
+- You can declare a type from another type.
+- Maps he said are simples.
+
+
+Methods
+-------
+- A function is called a method when its declared with a receiver, and look an felt like a parameter, we could use value receiver and pointer receivers.
+- A receiver name should be small.
+- Try to no use mixed semantics.
+- The method is working on is own copy of the value.
+- Go could let you work with user of *user for a method.
+- 
