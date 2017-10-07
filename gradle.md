@@ -10,7 +10,8 @@ docs.gradle.org/current/userguide/
 * EL DSL reference nos ayuda a entender lo que esta en los build gradle, util
 para lo que hare.
 * el comando gtadle dep, es interesante.
-
+* Es posible copiar todos los jar dependencies files en un solo folder
+  simulando un caching dependencies.
 
 Java Projects
 -------------
