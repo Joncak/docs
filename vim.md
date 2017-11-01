@@ -20,7 +20,7 @@ otra vez volvemos al file anterior.
                              AV: Open Vertical
 GoDef  or gd===> Va a la def de la funcion
 GoDefPop C t ==> GO back
-> PARA ESTO SE NECESITA ctrp.vim
+PARA ESTO SE NECESITA ctrp.vim
 GoDcls ===> Hace un sumario y muestra todas las funciones y sus type
 declaration, tambien tiene fuzzy word search.
 GoDeclsDir ==> Es similar pero busca en diff files.
