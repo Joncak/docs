@@ -3,7 +3,7 @@ Vim-Go
 vif ==> indent funtion combine with d, y etc....
 vaf ==> the all funtion including the comments.
 gs ===> convert single line to multi line, but the cursor on the parragh 
-> Estos no me estan funcionando me parece que se necesita snippet.
+Estos no me estan funcionando me parece que se necesita snippet.
 errp ==> snippet && TAB with panic.
 errn ===> return error.
 errn, ===> pick the return you want.
